@@ -46,9 +46,9 @@ export default function Home() {
   const [movements, handleMovements] = useState([]);
   const [movementsQuantity, handleMovementsQuantity] = useState(4);
 
-  useEffect(() => {
-    console.log('###1', movements)
-  }, [movements]);
+  // useEffect(() => {
+  //   console.log('###1', movements)
+  // }, [movements]);
 
   return (
     <div className={styles.container}>
@@ -63,10 +63,10 @@ export default function Home() {
           Muay Thai Movements
         </h1>
 
-          <button onClick={() => speak_movements(movements)}>Play</button>
-          <button onClick={() => speak_pause()}>Stop</button>
+          <button disabled={movements.length > 0 ? false : true} onClick={() => speak_movements(movements)}>Play</button>
+          <button disabled={movements.length > 0 ? false : true} onClick={() => speak_pause()}>Stop</button>
           <button onClick={() => handleMovements(random_movements(movementsQuantity))}>Sort new movements</button>
-          <input type="number" id="movements-quantity" onChange={(e) => handleMovementsQuantity(e.target.value)}/>
+          <input type="number" id="movements-quantity" onChange={(e) => handleMovementsQuantity(e.target.value)} value={movementsQuantity} min={1}/>
           {movements && movements.length > 0 ? <ListMovements movements={movements}/> : ''}
       </main>
     </div>
