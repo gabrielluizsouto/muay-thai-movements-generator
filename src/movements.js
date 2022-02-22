@@ -1,96 +1,96 @@
 export const movements = [
   {
-    name: 'Jab',
+    name: 'Jab 👊',
     speak_form: 'jébi',
     level: 'branca',
     fall_in_switch_base: false
   },
   {
-    name: 'Direto',
+    name: 'Direto 👊',
     speak_form: 'direto',
     level: 'branca',
     fall_in_switch_base: false
   },
   {
-    name: 'Cruzado',
+    name: 'Cruzado 🤜',
     speak_form: 'cruzado',
     level: 'branca',
     fall_in_switch_base: false
   },
   {
-    name: 'Upper',
+    name: 'Upper ✊',
     speak_form: 'upper',
     level: 'branca',
     fall_in_switch_base: false
   },
   {
-    name: 'Esquiva lateral',
+    name: 'Esquiva lateral 💨',
     speak_form: 'esquiva lateral',
     level: 'ponta_vermelha',
     fall_in_switch_base: false
   },
   {
-    name: 'Bloqueio de jab direto',
+    name: 'Bloqueio de jab direto 🙌',
     speak_form: 'Bloqueio de jébi direto',
     level: 'ponta_vermelha',
     fall_in_switch_base: false
   },
   {
-    name: 'Step',
+    name: 'Step 👣',
     speak_form: 'step',
     level: 'ponta_vermelha',
     fall_in_switch_base: false
   },
   {
-    name: 'High kick',
+    name: 'High kick 🦶🔝',
     speak_form: 'high kick',
     level: 'ponta_vermelha',
     fall_in_switch_base: false
   },
   {
-    name: 'Low kick',
+    name: 'Low kick 🦶⬇️',
     speak_form: 'low kick',
     level: 'ponta_vermelha',
     fall_in_switch_base: false
   },
   {
-    name: 'Joelhada',
+    name: 'Joelhada 🦵',
     speak_form: 'joelhada',
     level: 'ponta_vermelha',
     fall_in_switch_base: false
   },
   {
-    name: 'Joelhada lateral',
+    name: 'Joelhada lateral 🦵↔️',
     speak_form: 'joelhada lateral',
     level: 'ponta_vermelha',
     fall_in_switch_base: false
   },
   {
-    name: 'Cotovelada lateral',
+    name: 'Cotovelada lateral 💪↔️',
     speak_form: 'Cotovelada lateral',
     level: 'ponta_vermelha',
     fall_in_switch_base: false
   },
   {
-    name: 'Chute frontal',
+    name: 'Chute frontal 🦶',
     speak_form: 'chute frontal',
     level: 'ponta_vermelha',
     fall_in_switch_base: false
   },
   {
-    name: 'Chute lateral',
+    name: 'Chute lateral 🦶↔️',
     speak_form: 'chute lateral',
     level: 'ponta_vermelha',
     fall_in_switch_base: false
   },
   {
-    name: 'Teep',
+    name: 'Teep 🦶',
     speak_form: 'teep',
     level: 'ponta_vermelha',
     fall_in_switch_base: false
   },
   {
-    name: 'Dae Teep',
+    name: 'Dae Teep 🦶👣',
     speak_form: 'dae teep',
     level: 'ponta_vermelha',
     fall_in_switch_base: true
