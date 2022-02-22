@@ -54,6 +54,18 @@ export const movements = [
     fall_in_switch_base: false
   },
   {
+    name: 'Joelhada',
+    speak_form: 'joelhada',
+    level: 'ponta_vermelha',
+    fall_in_switch_base: false
+  },
+  {
+    name: 'Joelhada lateral',
+    speak_form: 'joelhada lateral',
+    level: 'ponta_vermelha',
+    fall_in_switch_base: false
+  },
+  {
     name: 'Cotovelada lateral',
     speak_form: 'Cotovelada lateral',
     level: 'ponta_vermelha',

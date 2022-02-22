@@ -1,10 +1,12 @@
+import styles from '../../styles/Home.module.css'
+
 const ListMovements = (movements) => {
   return (
-    <ul> {console.log('###', movements.movements)}
+    <div className={styles.movements_list}>
       {movements && movements.movements && movements.movements.map(item => {
-        return (<li>{item.name}</li>)
+        return (<div className={styles.movements_list_item}>{item.name}</div>)
       })}
-    </ul>
+    </div>
   );
 }
 

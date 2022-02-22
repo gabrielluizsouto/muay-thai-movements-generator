@@ -46,9 +46,9 @@ export default function Home() {
   const [movements, handleMovements] = useState([]);
   const [movementsQuantity, handleMovementsQuantity] = useState(4);
 
-  // useEffect(() => {
-  //   console.log('###1', movements)
-  // }, [movements]);
+  useEffect(() => {
+    speak_movements(movements);
+  }, [movements]);
 
   return (
     <div className={styles.container}>
@@ -63,10 +63,19 @@ export default function Home() {
           Muay Thai Movements
         </h1>
 
-          <button disabled={movements.length > 0 ? false : true} onClick={() => speak_movements(movements)}>Play</button>
-          <button disabled={movements.length > 0 ? false : true} onClick={() => speak_pause()}>Stop</button>
-          <button onClick={() => handleMovements(random_movements(movementsQuantity))}>Sort new movements</button>
-          <input type="number" id="movements-quantity" onChange={(e) => handleMovementsQuantity(e.target.value)} value={movementsQuantity} min={1}/>
+          <div className={styles.player_buttons}>
+            <button className={styles.btn} disabled={movements.length > 0 ? false : true} onClick={() => speak_movements(movements)}>🔊</button>
+            <button className={styles.btn} disabled={movements.length > 0 ? false : true} onClick={() => speak_pause()}>🚫</button>
+          </div>
+          <button  className={styles.btn_sort_news_mov} onClick={() => handleMovements(random_movements(movementsQuantity))}>New movements</button>
+
+          <div className='movements-quantity-buttons'>
+            {/* <input type="number" id="movements-quantity" onChange={(e) => handleMovementsQuantity(e.target.value)} value={movementsQuantity} min={1}/> */}
+            <button  className={styles.btn_quantity} onClick={() => {handleMovements(random_movements(3)); handleMovementsQuantity(3)}}>3</button>
+            <button  className={styles.btn_quantity} onClick={() => {handleMovements(random_movements(4)); handleMovementsQuantity(4)}}>4</button>
+            <button  className={styles.btn_quantity} onClick={() => {handleMovements(random_movements(5)); handleMovementsQuantity(5)}}>5</button>
+            <button  className={styles.btn_quantity} onClick={() => {handleMovements(random_movements(6)); handleMovementsQuantity(6)}}>6</button>
+          </div>
           {movements && movements.length > 0 ? <ListMovements movements={movements}/> : ''}
       </main>
     </div>
